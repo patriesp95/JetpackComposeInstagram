@@ -45,6 +45,19 @@ fun LoginScreen() {
     ) {
         Header(Modifier.align(Alignment.TopEnd))
         Body(Modifier.align(alignment = Alignment.Center))
+        Footer(Modifier.align(alignment = Alignment.BottomCenter))
+    }
+}
+
+@Composable
+fun Footer(modifier: Modifier) {
+    Column(modifier = modifier.fillMaxWidth()){
+        Divider(
+            Modifier
+                .background(Color(0xFFF9F9F9))
+                .height(1.dp)
+                .fillMaxWidth()
+        )
     }
 }
 
